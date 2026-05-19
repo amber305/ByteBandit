@@ -1,0 +1,67 @@
+.tech-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #111827;
+  border-bottom: 1px solid #111827;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.tech-container {
+  max-width: 100%;
+  text-align: center;
+}
+
+.tech-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding: 0 24px;
+}
+
+.marquee-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 24px;
+  width: 100vw;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 24px;
+  animation: scroll 30s linear infinite;
+}
+
+.tech-badge {
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: 1px solid #111827;
+  border-radius: 999px; /* pill shape */
+  box-shadow: 2px 2px 0px 0px #000000;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-title {
+    font-size: 28px;
+  }
+}
